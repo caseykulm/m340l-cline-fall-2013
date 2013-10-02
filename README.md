@@ -7,6 +7,7 @@ How to compile and run
 ======================
 
 > javac Test.java
+
 > java Test
 
 Optional flags
