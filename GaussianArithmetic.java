@@ -184,8 +184,8 @@ public class GaussianArithmetic {
 		double record = matrix[maxPivotRow][k];
 
 		for(int row = k; row<matrix.length; row++) {
-			if(matrix[row][k]>record) {
-				record = matrix[row][k];
+			if(Math.abs(matrix[row][k])>record) {
+				record = Math.abs(matrix[row][k]);
 				maxPivotRow = row;
 			}
 		}
