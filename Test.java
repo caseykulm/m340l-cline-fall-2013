@@ -11,11 +11,16 @@ public class Test {
 			 {-2, -1, 3},
 			 {6, 0, -12}};
 
+		double[] b = 
+			{-5,
+			  6,
+			 -18};
+
 		GaussianArithmetic ga = new GaussianArithmetic(verboseFlags);
 
-		ga.printMatrix(matrix);
+		ga.printMatrixWithRHS(matrix, b);
 
-		double[] solutionVector = ga.solveWithPartialPivoting(matrix);
+		double[] solutionVector = ga.solveWithPartialPivoting(matrix, b);
 		ga.printSolutionVector(solutionVector);
 	}
 
@@ -28,8 +33,8 @@ public class Test {
 			if(currArg.equals("-verbose")) {
 				verboseFlags.add("verbose");
 			}
-			else if(currArg.equals("-forward_elimination")) {
-				verboseFlags.add("forward_elimination");
+			else if(currArg.equals("-partial_pivoting")) {
+				verboseFlags.add("partial_pivoting");
 			}
 			else {
 				System.out.println("Unrecognized flag: " + currArg);

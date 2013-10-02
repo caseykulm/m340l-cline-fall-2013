@@ -13,8 +13,8 @@ How to compile and run
 Optional flags
 ==============
 
-For a verbose print out
+For a verbose print out on any of the following algorithms
 > java Test -verbose
 
 For "Gaussian Elimination Algorithm with Partial Pivoting and Elimination Separated from Solving"
-> java Test -forward_elimination
+> java Test -partial_pivoting
