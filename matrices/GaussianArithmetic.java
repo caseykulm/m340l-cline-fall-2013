@@ -1,3 +1,5 @@
+package matrices;
+
 import java.util.ArrayList;
 
 public class GaussianArithmetic {

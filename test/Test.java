@@ -1,4 +1,9 @@
+package test;
+
 import java.util.ArrayList;
+
+import matrices.GaussianArithmetic;
+import matrices.Matrix;
 
 public class Test {
 	
@@ -22,6 +27,10 @@ public class Test {
 
 		double[] solutionVector = ga.solveWithPartialPivoting(matrix, b);
 		ga.printSolutionVector(solutionVector);
+		
+		Matrix mat = new Matrix(matrix);
+		mat.display();
+		
 	}
 
 	public static ArrayList<String> getVerboseFlags(String[] args) {
